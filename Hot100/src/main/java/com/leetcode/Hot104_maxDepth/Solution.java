@@ -7,26 +7,47 @@ public class Solution {
     public static void main(String[] args) {
 
     }
-    public int maxDepth(TreeNode root){
-        if (root==null){
-            return 0;
-        }
+//    public int maxDepth(TreeNode root){
+//        if (root==null){
+//            return 0;
+//        }
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        queue.add(root);
+//        int maxDepth = 0;
+//        while(queue.size()!=0){
+//            int size = queue.size();
+//            while (size > 0){
+//                TreeNode temp = queue.poll();
+//                if (temp.left!=null){
+//                    queue.add(temp.left);
+//                }
+//                if (temp.right !=null){
+//                    queue.add(temp.right);
+//                }
+//                size--;
+//            }
+//            maxDepth++;
+//        }
+//        return maxDepth;
+//    }
+
+    public int maxDepth(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int maxDepth = 0;
-        while(queue.size()!=0){
-            int size = queue.size();
-            while (size > 0){
+        while (!queue.isEmpty()){
+            maxDepth++;
+            int queueSize = queue.size();
+            while(queueSize>0){
                 TreeNode temp = queue.poll();
                 if (temp.left!=null){
                     queue.add(temp.left);
                 }
-                if (temp.right !=null){
+                if (temp.right!=null){
                     queue.add(temp.right);
                 }
-                size--;
+                queueSize--;
             }
-            maxDepth++;
         }
         return maxDepth;
     }

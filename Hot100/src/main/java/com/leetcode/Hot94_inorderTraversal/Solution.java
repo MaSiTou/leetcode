@@ -14,16 +14,8 @@ public class Solution {
         }
         inorderTraversal(root.left);
         list.add(root.val);
+        System.out.println(root.val);
         inorderTraversal(root.right);
         return list;
     }
-//    public List<Integer> inorderTraversal(TreeNode root)
-//    {
-//        //使用迭代的方式，利用栈先进后出的原理
-//        if (root==null){
-//            return ;
-//        }
-//        Stack<TreeNode> s = new Stack<>();
-//
-//    }
 }

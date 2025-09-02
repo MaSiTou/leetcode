@@ -10,6 +10,7 @@ public class Main {
         root.right.left = new TreeNode(3);
 
         SolutionBest solution = new SolutionBest();
+//        Solution solution  = new Solution();
         List<Integer> list = solution.inorderTraversal(root);
         for(int i:list){
             System.out.println(i);
