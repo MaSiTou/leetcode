@@ -1,5 +1,9 @@
 package thread;
 
+/**
+ * 演示如何通过标志位控制线程优雅退出的多线程示例程序。
+ * 线程会周期性地执行任务并在检测到退出标志时停止执行。
+ */
 public class MyInterrupt1 extends Thread {
 
     volatile boolean flag = false ;     // 线程执行的退出标记
