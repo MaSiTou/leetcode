@@ -28,6 +28,5 @@ public class MyInterrupt2 extends Thread {
 
         // 调用stop方法
         t1.interrupt();
-
     }
 }
