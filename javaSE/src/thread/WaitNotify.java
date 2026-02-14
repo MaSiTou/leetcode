@@ -11,6 +11,7 @@ public class WaitNotify {
                     while (!flag){
                         System.out.println(Thread.currentThread().getName()+"...wating...");
                         try {
+                            //释放lock锁
                             lock.wait();
                         } catch (InterruptedException e) {
                             e.printStackTrace();

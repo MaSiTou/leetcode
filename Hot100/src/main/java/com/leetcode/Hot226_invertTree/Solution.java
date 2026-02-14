@@ -19,7 +19,6 @@ public class Solution {
         if (root!=null) {
             invert(root);
         }
-
         return root;
     }
 }

@@ -1,0 +1,20 @@
+package com.leetcode.NO3453_separateSquares;
+
+public class Main {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[][] test = new int[][]{
+                {522261215,954313664,225462},
+                {628661372,718610752,10667},
+                {619734768,941310679,44788},
+                {352367502,656774918,289036},
+                {860247066,905800565,100123},
+                {817623994,962847576,71460},
+                {691552058,782740602,36271},
+                {911356,152015365,513881},
+                {462847044,859151855,233567},
+                {672324240,954509294,685569},
+        };
+        System.out.println(solution.separateSquares(test));;
+    }
+}
